@@ -1,0 +1,10 @@
+﻿/*Bootstrap*/
+@import url('../Content/bootstrap.min.css');
+
+/*Cpmponents*/
+
+@import url('Components/navbar.css');
+@import url('Components/carousel.css');
+
+/*Layout*/
+@import url('Layout/layout.css');
