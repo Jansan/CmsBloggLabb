@@ -10,7 +10,7 @@
                 postsApi.addPost($scope.newPost)
                     .then(function (data) {
                        
-                        $scope.posts.push(data);
+                        $scope.models.posts.push(data);
                         $scope.newPost = {};
                         $scope.go('/Admin');
 

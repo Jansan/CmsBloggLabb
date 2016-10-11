@@ -24,6 +24,12 @@
                 CaseInsensitiveMatch: true,
                 activeTab: "Home"
             })
+            .when("/Subscriptions", {
+                templateUrl: "Views/Subscriptions.html",
+                controller: "SubscriptionsController",
+                CaseInsensitiveMatch: true,
+                activeTab: "Subscriptions"
+            })
             .when("/Admin", {
                 templateUrl: "Views/Admin.html",
                 controller: "AdminController",

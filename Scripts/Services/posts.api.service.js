@@ -69,5 +69,35 @@
                 return deferred.promise;
             };
 
+            //Up votes
+            this.upvotePost = function (upvotedPost) {
+                var deferred = $q.defer();
+
+                $http.put(upvotes + "/" + upvotedPost.id, upvotedPost) //Metod
+                    .then(function (response) {
+                        deferred.resolve(response.data);
+                    }, function (response) {
+                        deferred.resolve([]);
+
+
+                    });
+                return deferred.promise;
+            };
+
+            //down votes
+            this.downvotePost = function (downvotedPost) {
+                var deferred = $q.defer();
+
+                $http.put(downvotes + "/" + downvotedPost.id, downvotedPost) //Metod
+                    .then(function (response) {
+                        deferred.resolve(response.data);
+                    }, function (response) {
+                        deferred.resolve([]);
+
+
+                    });
+                return deferred.promise;
+            };
+
         }
     ])
